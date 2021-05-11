@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>Roboto-Thin.ttf</file>
+  </qresource>
+</RCC>
