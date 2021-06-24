@@ -37,7 +37,7 @@ class Logger:
             with open (fileName, "wb") as files:
                 tree.write(files)
         except Exception:
-            #TODO: print message in status bar
+            #TODO: print message in status bar ok
             print('Создать файл с логами не удалось')
             assert False, 'Не удалось создать файл'
 
