@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>img/state.png</file>
     <file>img/settings_ico.png</file>
   </qresource>
 </RCC>

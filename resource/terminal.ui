@@ -7,35 +7,44 @@
     <x>0</x>
     <y>0</y>
     <width>550</width>
-    <height>366</height>
+    <height>250</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Terminal</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-background-color: rgb(22, 23, 29);</string>
+   <string notr="true">background-color: rgb(22, 23, 29);
+color: rgb(145, 147, 150);
+    </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btn_disconnect">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>280</y>
-      <width>221</width>
+      <x>440</x>
+      <y>110</y>
+      <width>101</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(61, 63, 69);
-color: rgb(145, 147, 150);</string>
+     <string notr="true">QPushButton
+{
+   background-color: rgb(61, 63, 69);
+   color: rgb(145, 147, 150);
+}
+QPushButton:hover
+{
+   background-color:white;
+   color: rgb(145, 147, 150);
+}</string>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Отключиться</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_header_settings">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -45,77 +54,114 @@ color: rgb(145, 147, 150);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">
-border-image: url(:/newPrefix/img/settings_ico.png) stretch;
-color: rgb(145, 147, 150);</string>
+     <string notr="true">image: url(:/newPrefix/img/settings_ico.png) stretch;</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLabel" name="header">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>250</y>
-      <width>431</width>
-      <height>20</height>
+      <y>0</y>
+      <width>550</width>
+      <height>50</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: rgb(36, 37, 43);</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QPlainTextEdit" name="richEdit">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>50</y>
-      <width>431</width>
-      <height>121</height>
+      <width>430</width>
+      <height>175</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(199, 201, 205);
-background-color: rgb(22, 23, 29);</string>
+     <string notr="true">color: rgb(145, 147, 150);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_connect">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>60</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+   background-color: rgb(61, 63, 69);
+   color: rgb(145, 147, 150);
+}
+QPushButton:hover
+{
+   background-color:white;
+   color: rgb(145, 147, 150);
+}</string>
+    </property>
+    <property name="text">
+     <string>Подключиться</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_file_save">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>190</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+   background-color: rgb(61, 63, 69);
+   color: rgb(145, 147, 150);
+}
+QPushButton:hover
+{
+   background-color:white;
+   color: rgb(145, 147, 150);
+}</string>
+    </property>
+    <property name="text">
+     <string>Сохранить файл</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_state">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>17</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 112, 93);
+/*background-color: rgb(94, 255, 35);*/</string>
     </property>
     <property name="text">
      <string/>
     </property>
-    <property name="margin">
-     <number>10</number>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBox">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>120</y>
-      <width>91</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(145, 147, 150);
-background-color: rgb(61, 63, 69);</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>9600</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>115200</string>
-     </property>
-    </item>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>100</y>
-      <width>91</width>
+      <x>190</x>
+      <y>20</y>
+      <width>71</width>
       <height>16</height>
      </rect>
     </property>
@@ -133,29 +179,94 @@ background-color: rgb(61, 63, 69);</string>
      <number>5</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>551</width>
-      <height>51</height>
+      <x>50</x>
+      <y>20</y>
+      <width>31</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(36, 37, 43);</string>
+     <string notr="true">color: rgb(145, 147, 150);
+background-color: rgb(61, 63, 69);</string>
     </property>
     <property name="text">
-     <string/>
+     <string>Port</string>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="indent">
+     <number>5</number>
     </property>
    </widget>
-   <zorder>pushButton_2</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>label</zorder>
-   <zorder>comboBox</zorder>
+   <widget class="QComboBox" name="comboBox_baudrate">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>16</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(145, 147, 150);
+background-color: rgb(61, 63, 69);</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_num_port">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>16</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(145, 147, 150);
+background-color: rgb(61, 63, 69);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_clear">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>18</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton
+{
+   background-color: rgb(187, 200, 255);
+}
+QPushButton:hover
+{
+   background-color:white;
+   color: rgb(145, 147, 150);
+}</string>
+    </property>
+    <property name="text">
+     <string>CLR</string>
+    </property>
+   </widget>
+   <zorder>btn_disconnect</zorder>
+   <zorder>header</zorder>
+   <zorder>btn_header_settings</zorder>
+   <zorder>richEdit</zorder>
+   <zorder>btn_connect</zorder>
+   <zorder>btn_file_save</zorder>
+   <zorder>btn_state</zorder>
    <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>label_4</zorder>
+   <zorder>comboBox_baudrate</zorder>
+   <zorder>comboBox_num_port</zorder>
+   <zorder>btn_clear</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

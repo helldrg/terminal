@@ -1,14 +1,31 @@
+# -*- coding: cp1252 -*-
+# on june
+# - change baudrate
+# - comport
+# - logger action
+# - simple graphic
+# + background animate
+# - animate color
+# - animate add blur
+# + resize main form: position components
+# + button hover change image background
+# + min size window +++++++++++++++++++++++++++
+# + change size main window on 550, 250
+# + change size plain text edit on 430, 175
+# - view objgraph module for debug
+# - view image
+# - view to much image
+# - load image scroll
+# - Ищем уязвимости в Python-коде с помощью open source инструмента Bandit
+# - визуализация алгоритмов
+# https://code-explained.com/lesson/simplified_hash_search
+from PyQt5 import QtWidgets
+from main_window import MainWindow
+import sys
 
-import serial
-
-
-serialPort = serial.Serial(port = "COM6", baudrate = 115200, bytesize = 8, timeout = 2, stopbits = serial.STOPBITS_ONE)
-serialString = ""
-
-while(1):
-    if(serialPort.in_waiting > 0):
-        serialString = serialPort.readline()
-        print(serialString.decode('Ascii'))
-        
-        # The b at the beginning is used to indicate bytes!
-        #serialPort.write(b"Success")
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    #QtCore.QTimer.singleShot(0, MainWindow.close) # <---
+    sys.exit(app.exec_())

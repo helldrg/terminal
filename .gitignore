@@ -1,0 +1,5 @@
+# for cubeide
+__pycache__/*
+build/*
+dist/*
+build/*
