@@ -1,23 +1,17 @@
 # -*- coding: cp1252 -*-
-# on june
+# on jule 20
 # - change baudrate
 # - comport
-# - logger action
+# - add logger in two state 1. apend; 2. create new   high
 # - simple graphic
-# + background animate
-# - animate color
+# - animate color                                     high
 # - animate add blur
-# + resize main form: position components
-# + button hover change image background
-# + min size window +++++++++++++++++++++++++++
-# + change size main window on 550, 250
-# + change size plain text edit on 430, 175
 # - view objgraph module for debug
 # - view image
 # - view to much image
 # - load image scroll
-# - Ищем уязвимости в Python-коде с помощью open source инструмента Bandit
-# - визуализация алгоритмов
+# - finding vulnerability in the program using open source tool Bandit
+# - visualization algorithm
 # https://code-explained.com/lesson/simplified_hash_search
 from PyQt5 import QtWidgets
 from main_window import MainWindow

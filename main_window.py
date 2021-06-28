@@ -34,6 +34,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # костыль для второго окна UPD: уже нет, так как некторые настройки находятся в главном окне
         self.thread = WorkThread()
         self.comboBox_num_port.addItems(self.thread.serial_ports())
+        self.comboBox_num_port.setEnabled(False)
         self.add_function()
         self.add_event()
         self.widget = SettingsWindow(self)

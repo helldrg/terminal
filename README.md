@@ -1,4 +1,4 @@
-###terminal
+## Terminal
 _Italic_ and *Italic*
 __Bold__ and **Bold**
 
